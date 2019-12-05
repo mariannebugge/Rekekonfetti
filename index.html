@@ -8,7 +8,7 @@
     <title>Rekekonfetti</title>
     <link rel="stylesheet" href="https://use.typekit.net/fax1bsw.css">
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./animasjon.css">
+    
 </head>
 
 <body>
@@ -163,9 +163,9 @@
 
             <section class="skjema">
                 <img src="./img-rekekonfetti/T12-konkurranse-logotype.png" class="konk">
-                    <form action="registrer.html">
-                        <input class="input" name="first-name" type="text" placeholder="Ola Nordmann" required>
-                        <input class="input" name="email" type="email" placeholder="ola@nordmann.no" required>
+                    <form id="skjema">
+                        <input id="inpNavn" class="input" name="first-name" type="text" placeholder="Ola Nordmann" required>
+                        <input id="inpEpost" class="input" name="email" type="email" placeholder="ola@nordmann.no" required>
                         <label for="bilde-velger">
                             <h2>Last opp bilde</h2>
                         </label>
@@ -174,8 +174,13 @@
                             <input type="checkbox" id="cb">
                             <a href="regler.html" target="_blank">Godta konkurranseregler</a>
                         </div>
-                        <button class="btn-2" href="#send">Send inn</button>
+                        <button type="submit" class="btn-2" href="#send">Send inn</button>
                     </form>
+
+                    <section id="personliste">
+                        
+                    </section>
+
             </section>
             
             <section class="bakgrunn-4">
@@ -213,6 +218,17 @@
             }
         }
     </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+
+        <script src="./index.js"></script>
+
 </body>
 
 </html>
