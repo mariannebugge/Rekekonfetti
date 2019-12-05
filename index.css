@@ -183,12 +183,18 @@ h1, h2, h3 {
     justify-content: center;
     align-items: center;
     font-weight: bolder;
+    
+    cursor: pointer;
 
     border: 4px solid;
 }
 
 .btn-2:hover {
     box-shadow: 4px 4px 5px;
+}
+
+.btn-2:focus {
+    outline: none;
 }
 
 .konfetti-mini {
@@ -1091,4 +1097,20 @@ footer {
     color: black;
     text-decoration: none;
     padding: 20px;
+}
+
+.btn-container {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#info-tekst {
+    display: none;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(184, 43, 18);
+    font-size: 20px;
 }

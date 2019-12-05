@@ -30,11 +30,26 @@ const personliste = document.getElementById("personliste");
 skjema.onsubmit = (evt) => {
     evt.preventDefault();
 
+    knapp.display = "true";
+    setTimeout(forsvinn, 1000);
+
     personer.push({
         navn: inpNavn.value,
         epost: inpEpost.value 
     });
 
+}
+
+
+/* Kode for å fjerne knappen */
+const knapp = document.getElementById("btn-2");
+const tekst = document.getElementById("info-tekst");
+
+function forsvinn() {
+    
+        knapp.style.display = "none";
+        tekst.style.display = "block";
+    
 }
 
 
