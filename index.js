@@ -31,7 +31,7 @@ skjema.onsubmit = (evt) => {
     evt.preventDefault();
 
     knapp.display = "true";
-    setTimeout(forsvinn, 1000);
+    setTimeout(forsvinn, 500);
 
     personer.push({
         navn: inpNavn.value,
