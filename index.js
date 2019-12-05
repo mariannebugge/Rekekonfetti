@@ -37,18 +37,6 @@ skjema.onsubmit = (evt) => {
 
 }
 
-function visPersoner(snap) {
-    const person = snap.val();
-    personliste.innerHTML += `
-        <article>
-            <p>${person.navn}</p>
-            <p>${person.epost}</p>
-        </article>
-    `;
-}
-
-
-personer.on("child_added", visPersoner);
 
 
  
