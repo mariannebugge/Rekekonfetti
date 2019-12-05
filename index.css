@@ -1,0 +1,1094 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+}
+
+body {
+    background-color: rgb(255, 238, 138);
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+.top-nav {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    gap: 3.5rem;
+    padding-top: 20px;
+}
+
+.nav-link {
+    color: rgb(184, 43, 18);
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 16px;
+    text-decoration-line: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(255, 238, 138);
+}
+
+.page-1 {
+    display: flex;
+    background-image: url(./img-rekekonfetti/T12-\ forsidekonfetti-2.png);
+    background-position: right;
+    background-size: 70%;
+    background-repeat: no-repeat;
+    justify-content: right;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.front-page {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr); 
+   grid-auto-rows: 100vh;
+   gap: 20px;
+   height: 100vh;
+}
+
+.text {
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.front-page {
+    background-position: right;
+    background-size: 50%;
+    height: 100vh;
+}
+
+.front-page-front-text {
+    justify-content: center;
+    align-items: center;
+}
+
+.rekekonfetti-logo {
+    position: absolute;
+    margin-left: 60px;
+    margin-top: -10px;
+    transform: rotate(-7deg);
+    pointer-events: none;
+}
+
+.logotype img {
+    display: flex;
+    width: 450px;   
+    object-fit: contain;  
+    justify-content: center;
+    align-items: center;
+    transform: translateX(190px);
+    transform: translateY(45px);
+    padding-left: 20px;
+}
+
+.front-text {
+    margin-top: 145px;
+    margin-left: 60px;
+    justify-content: right;
+}
+
+.front-text h1, h2, h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.front-text h1 {
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 60px;
+    color: rgb(184, 43, 18);
+    font-family: futura-pt-condensed, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 60px;
+}
+
+.front-text h2 {
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 25px;
+    color: black;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.front-text h3 {
+    padding-left: 130px;
+    padding-right: 130px;
+    font-size: 15;
+    font-weight: 500;
+    color: rgb(184, 43, 18);
+    font-family: futura-pt-regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.btn {
+    display: inline-block;
+    color: rgb(184, 43, 18);
+    text-decoration-line: none;
+    background-color: white;
+    margin: 10px;
+    padding: 8px;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    border-style: solid;
+    border-color: rgb(184, 43, 18);
+    border-width: 3px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+
+    border: 4px solid;
+}
+
+.btn:hover {
+    box-shadow: 4px 4px 5px;
+}
+
+.btn-2 {
+    display: inline-block;
+    color: rgb(184, 43, 18);
+    text-decoration-line: none;
+    background-color: white;
+    margin: 10px;
+    padding: 8px;
+    font-size: 30px;
+    border-style: solid;
+    border-color: rgb(184, 43, 18);
+    border-width: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+
+    border: 4px solid;
+}
+
+.btn-2:hover {
+    box-shadow: 4px 4px 5px;
+}
+
+.konfetti-mini {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 340px;
+    margin-left: -30px;
+    margin-top: -400px
+}
+
+.reke-boks {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: -20px;
+}
+
+.konfetti {
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.stjerneblink {
+    position: relative;
+    max-width: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.stjerne-1 {
+    position: absolute;
+    width: 100px;
+    left: 280px;
+    top: 415px;
+
+    animation: stjerne-1 2s linear infinite alternate;
+}
+
+@keyframes stjerne-1 {
+    0% {
+        opacity: 0.0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1.0;
+        transform: scale(100%);
+    }
+}
+
+.sidene {
+    position: absolute;
+    width: 10%;
+    margin-left: -60px;
+    padding-bottom: -100px;
+}
+
+.page-2 {
+    position: relative;
+    font-family: futura-pt, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+ .smaker {
+     position: relative;
+     margin: 250px;    
+     display: grid;
+     grid-auto-flow: column;
+     justify-content: center;
+     gap: 30px;
+ }
+
+ .avokado-bilde {
+    width: 350px;
+    margin-top: -230px;
+    margin-right: -50px;
+}
+
+.img-kreps {
+    position: relative;
+    pointer-events: none;
+
+    transition: 1s;
+}
+
+.krepse-bilde {
+    pointer-events: none;
+    width: 470px;
+    margin-top: -25px;
+}
+
+.avokado p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 35px;
+    max-width: 350px;
+
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kreps p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(184, 43, 18);
+    font-size: 35px;
+    margin-top: -19px;
+    text-align: center;
+    max-width: 350px;
+    
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+
+    transition: 0.5s;
+}
+
+ .avokado h1 {
+     display: flex;
+     justify-content: center;
+     align-items: top;
+     color: black;
+     font-weight: 300;
+     height: 200px;
+     font-size: 16px;
+     text-align: center;
+     width: 350px;
+     margin-top: 12px;
+
+     font-family: futura-pt-regular, sans-serif;
+     font-weight: 400;
+     font-style: normal;
+     line-height: 1.8;
+ }
+
+ .med-avokado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 350px;
+    margin-top: -50px;
+ }
+
+ .avokado {
+    opacity: 0;
+    margin-right: 40px;
+}
+
+.kreps {
+    margin-top: -200px;
+    opacity: 0;
+
+    transition: 0.5s;
+}
+
+.slideMe {
+    animation: slideIn 2s forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-30rem);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideMe2 {
+    animation: slideIn2 2s forwards;
+}
+
+@keyframes slideIn2 {
+    from {
+        opacity: 0;
+        transform: translateX(30rem);
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1; 
+    }
+}
+
+.kreps h1 {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    font-size: 16px;
+    color: black;
+    font-weight: 300;
+    height: 200px;
+    text-align: center;
+    width: 350px;
+    margin-top: 12px;
+
+    font-family: futura-pt-regular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8;
+
+    transition: 0.5s;
+ }
+
+ .med-kreps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-top: -65px;
+    
+    margin-left: 25px;
+ }
+
+ .fallende-konfetti {
+    pointer-events: none;
+ }
+
+ .fallende-konfetti-2 {
+     transform: translateY(-300px);
+     position: relative;
+     pointer-events: none;
+ }
+
+ .konfetti-1 {
+     position: absolute;
+     width: 40px;
+     right: 300px;
+     top: -70px;
+
+     animation: konfetti-2 50s 2s linear infinite;
+ }
+
+ .konfetti-2 {
+    position: absolute;
+    width: 20px;
+    right: 500px;
+    top: -50px;
+
+    animation: konfetti-3 45s 15s linear infinite;
+}
+
+.konfetti-3 {
+    position: absolute;
+    width: 60px;
+    right: 630px;
+    top: -75px;
+
+    animation: konfetti-4 50s 12s linear infinite;
+}
+
+.konfetti-4 {
+    position: absolute;
+    width: 25px;
+    right: 400px;
+    top: -40px;
+
+    animation: konfetti-3 40s 6s linear infinite;
+}
+
+.konfetti-5 {
+    position: absolute;
+    width: 50px;
+    right: 600px;
+    top: -40px;
+
+    animation: konfetti-2 50s 6s linear infinite;
+}
+
+.konfetti-6 {
+    position: absolute;
+    width: 30px;
+    right: 800px;
+    top: -40px;
+
+    animation: konfetti-3 50s 3s linear infinite;
+}
+
+.konfetti-7 {
+    position: absolute;
+    width: 80px;
+    right: 450px;
+    top: -40px;
+
+    animation: konfetti-4 50s 10s linear infinite;
+}
+
+.konfetti-8 {
+    position: absolute;
+    width: 13px;
+    right: 650px;
+    top: -40px;
+
+    animation: konfetti-2 45s 18s linear infinite;
+}
+
+.konfetti-9 {
+    position: absolute;
+    width: 35px;
+    right: 720px;
+    top: -120px;
+
+    animation: konfetti-4 50s linear infinite;
+}
+
+.konfetti-10 {
+    position: absolute;
+    width: 15px;
+    right: 800px;
+    top: -40px;
+
+    animation: konfetti-2 50s 9s linear infinite;
+}
+
+.konfetti-11 {
+    position: absolute;
+    width: 90px;
+    right: 100px;
+    top: -70px;
+
+    animation: konfetti-3 40s 6s linear infinite;
+}
+
+.konfetti-12 {
+    position: absolute;
+    width: 80px;
+    right: 800px;
+    top: -140px;
+
+    animation: konfetti-4 50s 13s linear infinite;
+}
+
+.konfetti-13 {
+    position: absolute;
+    width: 20px;
+    right: 500px;
+    top: -100px;
+
+    animation: konfetti-5 45s 2s linear infinite;
+}
+
+.konfetti-14 {
+    position: absolute;
+    width: 20px;
+    right: 280px;
+    top: -100px;
+
+    animation: konfetti-4 40s 8s linear infinite;
+}
+
+.konfetti-15 {
+    position: absolute;
+    width: 10px;
+    right: 380px;
+    top: -70px;
+
+    animation: konfetti-4 50s 10s linear infinite;
+}
+
+.konfetti-16 {
+    position: absolute;
+    width: 15px;
+    right: 780px;
+    top: -70px;
+
+    animation: konfetti-4 50s 17s linear infinite;
+}
+
+.konfetti-17 {
+    position: absolute;
+    width: 35px;
+    right: 280px;
+    top: -70px;
+
+    animation: konfetti-4 50s 15s linear infinite;
+}
+
+@keyframes konfetti-2 {
+    0% {
+        top: -40px;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    10% {
+        transform: translateX(100px);
+    }
+
+    20% {
+        transform:  translateX(-60px);
+    }
+
+    35% {
+        transform: translateX(40px);
+    }
+
+    50% {
+        transform:  translateX(-60px);
+    }
+
+    65% {
+        transform:  translateX(20px);
+    }
+
+    70% {
+        transform:  translateX(-50px);
+        opacity: 1;
+    }
+
+    85% {
+        transform:  translateX(40px);
+    }
+
+    90% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        top: calc(100vh + 30px);
+        transform: translateX(80px);
+        opacity: 0;
+    }
+}
+
+@keyframes konfetti-3 {
+    0% {
+        top: -40px;
+        transform: translateX(0);
+        opacity: 1; 
+    }
+
+    10% {
+        transform: translateX(40px);
+    }
+
+    20% {
+        transform:  translateX(-50px);
+    }
+
+    35% {
+        transform: translateX(60px);
+    }
+
+    50% {
+        transform:  translateX(-40px);
+    }
+
+    65% {
+        transform:  translateX(60px);
+    }
+
+    70% {
+        transform:  translateX(-40px);
+        opacity: 1;
+    }
+
+    85% {
+        transform:  translateX(60px);
+    }
+
+    90% {
+        transform: translateX(-40px);
+    }
+
+    100% {
+        top: calc(100vh + 30px);
+        transform: translateX(60px);
+        opacity: 0;
+    }
+}
+
+@keyframes konfetti-4 {
+    0% {
+        top: -40px;
+        transform: translateX(0);
+        opacity: 1; 
+    }
+
+    10% {
+        transform: translateX(50px);
+    }
+
+    20% {
+        transform:  translateX(-50px);
+    }
+
+    35% {
+        transform: translateX(50px);
+    }
+
+    50% {
+        transform:  translateX(-50px);
+    }
+
+    65% {
+        transform:  translateX(50px);
+    }
+
+    70% {
+        transform:  translateX(-50px);
+        opacity: 1;
+    }
+
+    85% {
+        transform:  translateX(50px);
+    }
+
+    90% {
+        transform: translateX(-50px);
+    }
+
+    100% {
+        top: calc(100vh + 30px);
+        transform: translateX(50px);
+        opacity: 0;
+    }
+}
+
+@keyframes konfetti-5 {
+    0% {
+        top: -40px;
+        transform: translateX(0);
+        opacity: 1; 
+    }
+
+    10% {
+        transform: translateX(30px);
+    }
+
+    20% {
+        transform:  translateX(-30px);
+    }
+
+    35% {
+        transform: translateX(30px);
+    }
+
+    50% {
+        transform:  translateX(-30px);
+    }
+
+    65% {
+        transform:  translateX(30px);
+    }
+
+    70% {
+        transform:  translateX(-30px);
+        opacity: 1;
+    }
+
+    85% {
+        transform:  translateX(30px);
+    }
+
+    90% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        top: calc(100vh + 30px);
+        transform: translateX(30px);
+        opacity: 0;
+    }
+}
+
+.midten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(184, 43, 18);
+    margin-top: -20px;
+}
+
+.mini-bilde {
+    margin-bottom: -120px;
+}
+
+.midten h1 {
+    
+    font-size: 50px;
+}
+
+.page-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.butikker {
+    width: 800px;
+    margin-top: 70px;
+}
+
+.matbutikker h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(184, 43, 18);
+    margin-top: -100px;
+}
+
+.matbutikker h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    font-family: futura-pt-regular, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+}
+
+.skroll-ned {
+    position: absolute;
+    left: 50%;
+    bottom: 8px;
+    text-align: center;
+}
+
+.skroll-ned h1 {
+    font-size: 14px;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: rgb(184, 43, 18);
+}
+
+.skroll-ned img {
+    text-align: center;
+    margin-top: 10px;
+    width: 30px;
+    animation: pil-ned 2s linear infinite;
+}
+
+@keyframes pil-ned {
+    0% {
+       transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.skroll-opp {
+    text-align: center;
+    margin-bottom: 10px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 20px;
+
+}
+
+.opp {
+    font-size: 13px;
+    font-family: futura-pt-bold, sans-serif;
+    text-decoration: none;
+    color: rgb(184, 43, 18);
+}
+
+.up {
+    width: 30px; 
+
+    animation: pil-opp 2s infinite;
+}
+
+@keyframes pil-opp {
+    0% {
+       transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.mellom-1 {
+    display: block;
+    width: 60%;
+    margin-bottom: 160px;
+    margin-top: -250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mellom-2 {
+    display: block;
+    width: 60%;
+    text-align: center;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nederst {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-top: -660px;
+}
+
+.konkurranse-logo {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 300px;
+    margin-top: 22.5rem;
+    transform: rotate(-6deg);
+}
+
+.overskriften {
+    margin-top: -60px;
+}
+
+.overskriften h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-family: futura-pt-bold, sans-serif;
+    color: rgb(184, 43, 18);
+    margin-top: 130px;
+}
+
+.final-regler {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 30%;
+    margin-top: 10px;
+    margin-bottom: 80px;
+}
+
+.skjema {
+    position: relative; 
+    background-color: rgb(255, 245, 188);
+    color: black;
+    text-align: center;
+    margin-left: 400px;
+    margin-right: 400px;
+    width: 600px;
+    margin-bottom: 180px;
+    padding-top: 60px;
+    box-shadow: 2px 2px 15px 2px rgb(184, 43, 18);
+}
+
+.konk {
+    position: absolute;
+    left: -110px;
+    top: -65px;
+    width: 400px;
+    transform: rotate(-8deg);
+    pointer-events: none; /* Ikke reager på klikk */
+}
+
+.skjema .input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+
+    text-align: center;
+    
+    background-color: white;
+    width: 350px;
+    color: black;
+    font-family: futura-pt-, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 20px;
+    padding: 15px;
+
+    border-style: solid;
+    border-color: lightslategray;
+    border-width: 1px;
+}
+
+.skjema .input:focus {
+    outline: none; /* Ikke lag den blå rammen */
+}
+
+.skjema h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+
+    line-height: 4px;
+    background-color: white;
+    width: 130px;
+    color: lightslategray;
+    font-family: futura-pt-, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 15px;
+    padding: 15px;
+
+    border-style: solid;
+    border-color: lightslategray;
+    border-width: 1px;
+}
+
+#bilde-velger {
+    display: none;
+}
+
+.skjema h3 {
+    line-height: 4px;
+    background-color: white;
+    color: lightslategray;
+    width: 175px;
+    font-size: 15px;
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 20px;
+
+    text-align: center;
+    line-height: 4px;
+    background-color: white;
+    width: 175px;
+    color: black;
+    font-family: futura-pt-, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    padding: 15px;
+
+    border-style: solid;
+    border-color: rgb(184, 43, 18);
+    border-width: 1px;
+}
+
+.godta {
+    text-decoration-line: underline;
+    font-family: futura-pt-, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+}
+
+#cb {
+    margin-top: 25px;
+    color: black;
+}
+
+.regler{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: -10px;
+    text-align: center;
+    font-family: futura-pt-, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(207, 187, 0);
+    height: 3.5rem;
+    width: 100%;
+}
+
+.bunn {
+    font-size: 16px;
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+    padding: 20px;
+}
